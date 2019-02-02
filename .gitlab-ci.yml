@@ -10,11 +10,3 @@ rubocop:
   script:
     - gem install rubocop
     - rubocop --debug  
-    
-test:
-  stage: "Test"
-  image: "ruby:2.3"
-  script:
-  - apt-get update -qy
-  - apt-get install -y nodejs
-  - bundle exec rake test
