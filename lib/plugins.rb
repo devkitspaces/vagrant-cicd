@@ -8,7 +8,7 @@ def get_plugins(vagrant)
   else
     required_plugins.concat required_plugins_non_windows
   end
-  return required_plugins
+  required_plugins
 end
 
 def enable_plugins(plugins)
