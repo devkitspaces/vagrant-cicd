@@ -1,0 +1,11 @@
+stages:
+- "Lint"
+- "Build"
+- "Test"
+
+rubocop:
+  image: "ruby:2.3"
+  stage: "Lint"
+  script:
+    - gem install rubocop
+    - rubocop --debug  
