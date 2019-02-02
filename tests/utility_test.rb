@@ -2,7 +2,6 @@ require 'test/unit'
 require 'palindrome'
 require 'awesome_print'
 
-# A placeholder test for verifying that tests do in fact run on this type of code.
 class PalindromeTest < Test::Unit::TestCase
     SAS_P = "sas"
 
