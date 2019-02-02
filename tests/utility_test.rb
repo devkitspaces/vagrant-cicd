@@ -3,24 +3,23 @@ require 'palindrome'
 require 'awesome_print'
 
 class PalindromeTest < Test::Unit::TestCase
-  SAS_P = "sas"
+  SAS_P = "sas".freeze
 
-  def setup
-  end
+  def setup; end
 
   def test_p_match
     res = Palindrome.p_match("esase", 1, 3)
-    assert(res.eql?("esase"), "Expected esase but was #{res}" )
+    assert(res.eql?("esase"), "Expected esase but was #{res}")
   end
 
   def test_p_match_single
-    res = Palindrome.p_match("esasf",1, 3)
-    assert(res.eql?(SAS_P), "Expected #{SAS_P} but was #{res}" )
+    res = Palindrome.p_match("esasf", 1, 3)
+    assert(res.eql?(SAS_P), "Expected #{SAS_P} but was #{res}")
   end
 
   def test_find_all_none
     pal_ary = Palindrome.find_all("etch")
-    assert(pal_ary.size == 0, "Expected 0 but size was " + pal_ary.size.to_s)
+    assert(pal_ary.empty?, "Expected 0 but size was " + pal_ary.size.to_s)
   end
 
   def test_find_all_one_beginning
