@@ -21,4 +21,3 @@ def enable_plugins(plugins)
     exec "vagrant #{ARGV.join(' ')}" if need_restart
   end
 end
-
