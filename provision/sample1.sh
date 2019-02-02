@@ -1,1 +1,2 @@
-echo "Hello, Contents"
+#!/bin/sh
+echo "Hello, from Vagrant!"

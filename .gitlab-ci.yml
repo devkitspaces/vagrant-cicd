@@ -1,12 +1,17 @@
 stages:
-- "Validation"
-- "Test"
+- "Validate"
 - "Build"
 - "Test"
 
 rubocop:
   image: "ruby:2.3"
-  stage: "Validation"
+  stage: "Validate"
   script:
     - gem install rubocop
     - rubocop --debug  
+
+shellcheck:
+  stage: "Validate"
+  image: cardboardci/shellcheck
+  script:
+    - shellcheck provision/*.sh
