@@ -6,4 +6,4 @@ Rake::TestTask.new(:test) do |test|
 end
 
 desc "Run Tests"
-task :default => :test
+task :default: :test
