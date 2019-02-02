@@ -1,6 +1,6 @@
 def run_provisioners(config, provisioners)
-  provisioners & .each do |file |
-    config.vm.provision: shell do |sh |
+  provisioners&.each do |file |
+    config.vm.provision :shell do |sh |
       sh.path = file
     end
   end
