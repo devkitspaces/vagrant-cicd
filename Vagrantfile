@@ -12,7 +12,7 @@ lib_dir = 'lib'
 lib_path = "#{root_dir}/#{lib_dir}"
 
 if File.exist?(lib_path)
-  lib_files = Dir.glob("#{lib_path}/*.rb") 
+  lib_files = Dir.glob("#{lib_path}/*.rb")
   lib_files&.each do |files|
     require_relative "#{lib_dir}/#{File.basename(files, '.rb')}"
   end

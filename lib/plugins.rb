@@ -1,8 +1,8 @@
 def get_plugins(vagrant)
   required_plugins = %w[vagrant-share]
   required_plugins_non_windows = %w[facter]
-  required_plugins_windows = %w[] 
-  
+  required_plugins_windows = %w[]
+
   if Vagrant::Util::Platform.windows?
     required_plugins.concat required_plugins_windows
   else
