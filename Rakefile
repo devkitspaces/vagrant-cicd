@@ -1,9 +1,7 @@
 require 'rake/testtask'
 
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'test'
-  test.test_files = FileList['tests/test_*.rb']
-end
+task default: %w[test]
 
-desc "Run Tests"
-task :default: :test
+task :test do
+  ruby "test/unittest.rb"
+end
