@@ -7,6 +7,8 @@ This example vagrant configuration installs and configures Ubuntu Trusty using s
 
 The objective is to move as much of the Vagrantfile configuration into external ruby scripts. These scripts could then be split into testable functions and modules. Currently the focus is on providing a consistent installation process using `shellcheck` and `rubocop`.
 
+Aiming to have a simple vagrant example in this repository, and then use GitLab CI to perform linting on the provisioning scripts (shell+ruby).
+
 ## Requirements
 
 The following software must be installed/present on your local machine before you can use Vagrant to build the virtual machine:
