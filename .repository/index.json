@@ -1,0 +1,24 @@
+{
+  "slug": "vagrant-cicd",
+  "namespace": "jrbeverly",
+  "status": "archived",
+  "icon": "icon.svg",
+  "license": {
+    "type": "MIT",
+    "content": "Jonathan Beverly <jrbeverly>"
+  },
+  "topics": [
+    "experiment",
+    "gitlab-ci",
+    "gitlab",
+    "vagrant",
+    "cicd",
+    "rubocop",
+    "linter",
+    "virtualbox"
+  ],
+  "languages": [
+    "Ruby",
+    "Shell"
+  ]
+}
