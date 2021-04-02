@@ -1,0 +1,21 @@
+slug: vagrant-cicd
+description: Using Rubocop and Shellcheck to perform linting on a Vagrantfile.
+project: devkitspaces
+namespace:
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2019
+topics: |-
+  [
+    "experiment",
+    "gitlab-ci",
+    "gitlab",
+    "vagrant",
+    "cicd",
+    "rubocop",
+    "linter",
+    "virtualbox"
+  ]
